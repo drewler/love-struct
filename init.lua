@@ -5,7 +5,6 @@
 local path = ({...})[1] .. "." 
 local struct = {}
 struct.grid = require(path .. "grid")
-struct.queue = require(path .."queue")
 struct.stack = require(path .. "stack")
 struct.tree = require(path .. "tree")
 struct.bag = require(path .. "bag")
