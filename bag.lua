@@ -48,7 +48,7 @@ function Bag:insert(item, item2, ...)
         self.items[item] = true
         self._size = self._size + 1
     end
-    if item2 then self:insert(item2, ...)
+    if item2 then self:insert(item2, ...) end
 end
 
 ---------------------------------------------------------------------------------------------------
@@ -63,7 +63,7 @@ end
 
 ---------------------------------------------------------------------------------------------------
 -- Toggles values
-function Bad:toggle(item, item2, ...)
+function Bag:toggle(item, item2, ...)
     self.items[item] = not self.items[item]
     self._size = self._size + self.items[item] and 1 or -1
     if item2 then self:toggle(item2, ...) end
